@@ -1,4 +1,4 @@
-package ru.novo_estate.web.data;
+package ru.novo_estate.web.enums;
 
 public enum DeveloperEnum {
     GK_А101("ГК «А101»"), GK_MIC ("ГК «МИЦ»"), GK_KOROTOS ("ГК «Кортрос»")

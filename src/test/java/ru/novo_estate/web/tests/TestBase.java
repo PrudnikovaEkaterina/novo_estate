@@ -8,8 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import ru.novo_estate.web.config.ProjectConfig;
+import ru.novo_estate.config.ProjectConfig;
 import ru.novo_estate.web.helpers.Attach;
+
 import java.util.Map;
 
 public class TestBase {
@@ -21,6 +22,7 @@ public class TestBase {
         Configuration.browserVersion = projectConfig.browserVersion();
         Configuration.browserSize = projectConfig.browserSize();
         Configuration.remote = projectConfig.remote();
+        Configuration.pageLoadStrategy = "eager";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

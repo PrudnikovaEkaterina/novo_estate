@@ -1,11 +1,8 @@
-package ru.novo_estate.api.models;
+package ru.novo_estate.api.models.building;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import ru.novo_estate.api.models.building.Building;
 
 import java.util.ArrayList;
 

@@ -1,0 +1,38 @@
+package ru.novo_estate.config;
+
+import org.aeonbits.owner.Config;
+
+@Config.LoadPolicy(Config.LoadType.MERGE)
+@Config.Sources({
+        "system:properties",
+        "classpath:${env}.properties",
+        "file:~/${env}.properties",
+        "file:./${env}.properties"
+})
+
+public interface ProjectConfig extends Config {
+
+    @Key("baseUrl")
+    @DefaultValue("https://novo-estate.ru")
+    String baseUrl();
+
+    @Key("browser")
+    @DefaultValue("chrome")
+    String browser();
+
+    @Key("browserVersion")
+    @DefaultValue("110")
+    String browserVersion();
+
+    @Key("browserSize")
+    @DefaultValue("1366x900")
+    String browserSize();
+
+
+    @Key("remote")
+    String remote();
+
+}
+
+
+

@@ -1,4 +1,4 @@
-package ru.novo_estate.web.data;
+package ru.novo_estate.web.enums;
 
 public enum CityEnum {
     LYUBERTSY("Люберцы"), HIMKI("Химки"), DMITROV("Дмитров");

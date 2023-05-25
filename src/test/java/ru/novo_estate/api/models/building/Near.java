@@ -1,10 +1,7 @@
-package ru.novo_estate.api.models;
+package ru.novo_estate.api.models.building;
 
 import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 @Data
