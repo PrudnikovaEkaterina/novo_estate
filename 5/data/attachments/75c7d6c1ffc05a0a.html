@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "freddy.veum@gmail.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI1Mzc2LCJleHAiOjE2ODUxMjcxNzYsIm5iZiI6MTY4NTEyNTM3NiwianRpIjoicFVaMVI4YUZDY3BoMGRxdSIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.Im_Nygx_KUFJ-6I5yz2fgu91v0fHYcJ50YZ6e03xrgYq6y8x0ExZXj8MR0_4EHgX91pQdKpzFa_SDTsEeAYfG_wI6HZMr_3KF9Xs65BS3ZFgoIcM63bJ43kEpJphNp0D2lqTNrbxfNDeoehcIo1kYKsqYxqGDZhpyYcB0chdh93yOUW2t7kJNLAza0up79ZzP21O0FCjmrvK4lZGGvAgkRSHaHYyuc06pO7Xw_uEcITK-KeHa90C3v8sYlcEBQAOl3-eKY5mecaWmCfPlcCumKdnrEaXWjPQ1Z2vbu9KjD-af9TiZX1TMixgzKMbN4y611ErCuPSHx51XZP5vnq7LJlPtvCsl8tUR4OpMT3BqDN1FDdOgyDqyzi0ng_-J4XU1Uzqugw34cALiAxK8ZPNDw4_B8Tsf3ffZlcctjfVEhShUWg1V5_TbtC_-cDfYzsOAqo_FZtXoGOuSx1Ts7mAsQjeBg3LmlgIwfELsRiQZ_oDim8nzG_8Kt-jKtZYd8ktMAgZaT7cvY7ojMAoZT2exXM3VQWy-x8chOmmu6vbOiGXefpwqsjibhpz0A0ik9Gn1bF1nZHaQxrcq3HBA_xmOkeWGRDVjgPPUlg51L7jftuPRze8oorBNnLNFUkyWKNmK9Cj_ubw8D3gVxEWWqcSOPHzmJ61U1CWHdSSRltYCmc</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI1Mzc2LCJleHAiOjE2ODUxMjcxNzYsIm5iZiI6MTY4NTEyNTM3NiwianRpIjoicFVaMVI4YUZDY3BoMGRxdSIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.Im_Nygx_KUFJ-6I5yz2fgu91v0fHYcJ50YZ6e03xrgYq6y8x0ExZXj8MR0_4EHgX91pQdKpzFa_SDTsEeAYfG_wI6HZMr_3KF9Xs65BS3ZFgoIcM63bJ43kEpJphNp0D2lqTNrbxfNDeoehcIo1kYKsqYxqGDZhpyYcB0chdh93yOUW2t7kJNLAza0up79ZzP21O0FCjmrvK4lZGGvAgkRSHaHYyuc06pO7Xw_uEcITK-KeHa90C3v8sYlcEBQAOl3-eKY5mecaWmCfPlcCumKdnrEaXWjPQ1Z2vbu9KjD-af9TiZX1TMixgzKMbN4y611ErCuPSHx51XZP5vnq7LJlPtvCsl8tUR4OpMT3BqDN1FDdOgyDqyzi0ng_-J4XU1Uzqugw34cALiAxK8ZPNDw4_B8Tsf3ffZlcctjfVEhShUWg1V5_TbtC_-cDfYzsOAqo_FZtXoGOuSx1Ts7mAsQjeBg3LmlgIwfELsRiQZ_oDim8nzG_8Kt-jKtZYd8ktMAgZaT7cvY7ojMAoZT2exXM3VQWy-x8chOmmu6vbOiGXefpwqsjibhpz0A0ik9Gn1bF1nZHaQxrcq3HBA_xmOkeWGRDVjgPPUlg51L7jftuPRze8oorBNnLNFUkyWKNmK9Cj_ubw8D3gVxEWWqcSOPHzmJ61U1CWHdSSRltYCmc' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "freddy.veum@gmail.com"
+}'</code></pre>
+    </div>
+</body>
+</html>
