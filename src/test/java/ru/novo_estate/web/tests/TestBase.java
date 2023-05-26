@@ -20,7 +20,7 @@ public class TestBase {
         Configuration.browser = projectConfig.browser();
         Configuration.browserVersion = projectConfig.browserVersion();
         Configuration.browserSize = projectConfig.browserSize();
-        Configuration.remote = projectConfig.remote();
+//        Configuration.remote = projectConfig.remote();
         Configuration.pageLoadStrategy = "eager";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
