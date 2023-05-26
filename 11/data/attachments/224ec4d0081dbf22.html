@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 0,
+    "phone": null,
+    "name": "Reda",
+    "role": 0,
+    "manager_id": null,
+    "email": "jesse.torphy@gmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTMwMDYzLCJleHAiOjE2ODUxMzE4NjMsIm5iZiI6MTY4NTEzMDA2MywianRpIjoib2FneWdSbHIwQlpQTThkVCIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.NyeMzVpe5uzn6917X9n87HgbzwTa-MwzgQWHAngc9du4eTThLtUPTRzIejK6TRZrGEp-QskXj8TyLhpfdCy2s4ULagVrZi4cTWjde8QPC23NdVhXzMDoFkjFcbONb2P_OWn60V6OG468DzhbAVQF5MR6Ne2Jnr6XPK7TmrPIrGZlxShq-8voJroZj-q7nqfHbYylPWr2dWNsVT0_1cG00V1-4_d5bafTU9HG-5gGQx1jqARde6NUyePL5E_2zZVWCZ-vqMz4UFM0cfzuhKo4rqsiaPDI9yUT2W1AaZgIqZssGWmexEmfcf4MX9ibdweFGx2FDJ5CvwwLtP-vsFuwlf7T_3mNhpv5EpanfvHeHVRmL2fM5Yyhn3pTbDdsv-Lm-ArqL_6vPiyxYRO0b51rb7Gl2LBH0kovc-pt14SCTOI9LF_X-HPC57uvtsqB_SDywX8bT-0mlx3BNCz99i72wpjuOeqKEHqIF58JZrMT-Y3lqlscgeTXylt_CpKHHhEInySKKcIlKTzItnbKRsqN-2X-xJTGHOy7MipoZPrCkUEQycvQSkARfLNZfcJW9BL316-yL-YRrwOkbJCCgSx2DSPz1reN8X1dHsmz7ogXiC2NPJq7TfSiuSidQZ5MPEmX8eskMDg32QWuIq57NRJ1u3agjmD7kdww1tlmiQ4K6cU</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTMwMDYzLCJleHAiOjE2ODUxMzE4NjMsIm5iZiI6MTY4NTEzMDA2MywianRpIjoib2FneWdSbHIwQlpQTThkVCIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.NyeMzVpe5uzn6917X9n87HgbzwTa-MwzgQWHAngc9du4eTThLtUPTRzIejK6TRZrGEp-QskXj8TyLhpfdCy2s4ULagVrZi4cTWjde8QPC23NdVhXzMDoFkjFcbONb2P_OWn60V6OG468DzhbAVQF5MR6Ne2Jnr6XPK7TmrPIrGZlxShq-8voJroZj-q7nqfHbYylPWr2dWNsVT0_1cG00V1-4_d5bafTU9HG-5gGQx1jqARde6NUyePL5E_2zZVWCZ-vqMz4UFM0cfzuhKo4rqsiaPDI9yUT2W1AaZgIqZssGWmexEmfcf4MX9ibdweFGx2FDJ5CvwwLtP-vsFuwlf7T_3mNhpv5EpanfvHeHVRmL2fM5Yyhn3pTbDdsv-Lm-ArqL_6vPiyxYRO0b51rb7Gl2LBH0kovc-pt14SCTOI9LF_X-HPC57uvtsqB_SDywX8bT-0mlx3BNCz99i72wpjuOeqKEHqIF58JZrMT-Y3lqlscgeTXylt_CpKHHhEInySKKcIlKTzItnbKRsqN-2X-xJTGHOy7MipoZPrCkUEQycvQSkARfLNZfcJW9BL316-yL-YRrwOkbJCCgSx2DSPz1reN8X1dHsmz7ogXiC2NPJq7TfSiuSidQZ5MPEmX8eskMDg32QWuIq57NRJ1u3agjmD7kdww1tlmiQ4K6cU' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 0,
+    "phone": null,
+    "name": "Reda",
+    "role": 0,
+    "manager_id": null,
+    "email": "jesse.torphy@gmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}'</code></pre>
+    </div>
+</body>
+</html>
