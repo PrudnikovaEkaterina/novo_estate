@@ -23,11 +23,11 @@ public class TestBase {
 //        Configuration.remote = projectConfig.remote();
         Configuration.pageLoadStrategy = "eager";
 
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-//                "enableVNC", true,
-//                "enableVideo", true));
-//        Configuration.browserCapabilities = capabilities;
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true));
+        Configuration.browserCapabilities = capabilities;
     }
     @BeforeEach
     void addListener() {
