@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "lourie.aufderhar@hotmail.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTMwNzQ1LCJleHAiOjE2ODUxMzI1NDUsIm5iZiI6MTY4NTEzMDc0NSwianRpIjoib3lnelZyZktZUUFyU2h2SyIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.fxl6urSIfl5OeYlQgDZv_hiKveWrYJTjmTBGI8Gq7fF4CGQ7kqKPhXeY87GWSu9pUQB_SDpeMWiIDwhrgw_2f-Cd1r0YUFhZztN0SM3WZEqSkqjuDNvJqIgMTX4jENATBrRMIX0rAwyHK5IyTu0MsCI8Jkj4y2nxfuf-6gUOvP9Jxg_GgFegUqPxC_Dmb3_S6ftCFcTbzzZqgsnheOMtLeGh9AZd85kXMx2b1A6N8V05b0nyc1evBbkxR2kytApXXKgNi3h1casOFGXDb0fEfPYsPyrkHURG8M4_r0G-rMLSNgdnroZMwxyJJvvdYlep9mU2Uv3yYrN6pYdSiqpgDWlBQ2QPzfciVCxQrlPwCEA7FCrdOJxB5VckHMqjj8tBWdky3QCg6W9xvAop2LPU5IX6m2yY2Q_Z7vbe4cnlNvv4gOPwVkqgQ9CYvyM93ARsKpSEHfGCATUy4CkGyF6SkkzFll_Ypa_f0bcUn83puDDzrm2WXGQ3wcjhwh1BLiuclPuiLUY0KhBTtDELhNgCXsNNWjPn6FprYOfJJlJkyJC4Ymk_-a_O4-pccQMH1UH2xHwg4zwRUuZvIDhr9Ji8aZjGhe9Q-UffgyJlkgGkybzUz5i9OLfPPvPpTH_m2NYJc1Fhv_NZhpXUPli8kpy0TwS3e_ObnGzeBYm8cMNI9kE</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTMwNzQ1LCJleHAiOjE2ODUxMzI1NDUsIm5iZiI6MTY4NTEzMDc0NSwianRpIjoib3lnelZyZktZUUFyU2h2SyIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.fxl6urSIfl5OeYlQgDZv_hiKveWrYJTjmTBGI8Gq7fF4CGQ7kqKPhXeY87GWSu9pUQB_SDpeMWiIDwhrgw_2f-Cd1r0YUFhZztN0SM3WZEqSkqjuDNvJqIgMTX4jENATBrRMIX0rAwyHK5IyTu0MsCI8Jkj4y2nxfuf-6gUOvP9Jxg_GgFegUqPxC_Dmb3_S6ftCFcTbzzZqgsnheOMtLeGh9AZd85kXMx2b1A6N8V05b0nyc1evBbkxR2kytApXXKgNi3h1casOFGXDb0fEfPYsPyrkHURG8M4_r0G-rMLSNgdnroZMwxyJJvvdYlep9mU2Uv3yYrN6pYdSiqpgDWlBQ2QPzfciVCxQrlPwCEA7FCrdOJxB5VckHMqjj8tBWdky3QCg6W9xvAop2LPU5IX6m2yY2Q_Z7vbe4cnlNvv4gOPwVkqgQ9CYvyM93ARsKpSEHfGCATUy4CkGyF6SkkzFll_Ypa_f0bcUn83puDDzrm2WXGQ3wcjhwh1BLiuclPuiLUY0KhBTtDELhNgCXsNNWjPn6FprYOfJJlJkyJC4Ymk_-a_O4-pccQMH1UH2xHwg4zwRUuZvIDhr9Ji8aZjGhe9Q-UffgyJlkgGkybzUz5i9OLfPPvPpTH_m2NYJc1Fhv_NZhpXUPli8kpy0TwS3e_ObnGzeBYm8cMNI9kE' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "lourie.aufderhar@hotmail.com"
+}'</code></pre>
+    </div>
+</body>
+</html>

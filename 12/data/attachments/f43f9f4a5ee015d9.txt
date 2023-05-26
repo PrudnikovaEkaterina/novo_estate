@@ -1,0 +1,9 @@
+[2023-05-26T19:53:02.347Z] [SEVERE] https://sflog.ru/gtm/?term=0&id=4e8a49817a963784482dea98a8ff39cc - Failed to load resource: the server responded with a status of 403 ()
+[2023-05-26T19:53:02.923Z] [SEVERE] https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js 0:11485 TypeError: Cannot read properties of null (reading 'disconnect')
+    at https://novo-dom.ru/build/desktop/js/async-common.8b3f7e80.js:1:111296
+    at https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js:1:22628
+    at l (https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js:1:10997)
+    at s (https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js:1:11080)
+    at t.__weh.t.__weh (https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js:1:22502)
+    at k (https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js:1:12243)
+    at O (https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js:1:12524)
