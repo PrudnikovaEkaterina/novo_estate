@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "carlotta.greenfelder@gmail.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI0MjE3LCJleHAiOjE2ODUxMjYwMTcsIm5iZiI6MTY4NTEyNDIxNywianRpIjoiNkZxNmVzU3B4bEZPeTlYUCIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.V-pv-RsEn0joA5nYYGduwzp1KXYI6enN__IgRcvJgh228pVO6KYG95iOXVCcMl_5SpeoE8FjupDLIfQnc6P5LZvWQR8TQBj8ynouKgnUIU2zH797hsxN1DkoMzgGeJqNYxVguD4kWc9jS3huA6NSnwJeLxmXmHhWLCSYxdx29xpdt3Q35j1vGFZbeBA91qjRv-4dgquhBS3Y8uFjMUk-GuRK3kFNmnCvqLORPTajAJPIWHGZoRyrsne6BtpjmafLhgIO-jtRztetX_a0H60GgGpxU-R2yD5NMgLNw3-9j-Tob8fuexwat3dck8XpooB7wUREhj373jiygF_rcdYa-VWmzWv5HbV3ujXJkYWKvwIHlgFx8HvTd8uWnCKgxRVKmjnTTNXlxYR6cIAzdVoz8JJUxLFfISY2uz9MaxXhHWWwNGbEZFhLtriJxVuqwL7kCnyFpVIzsDDIK5mxZc6Mxa4AGer6GT6Bkkg8e5dYM1N7X5diqQQAVVE_nqVIqsHbH2iwjjMvMD4uF8n0TYpPgiFwtkdWcVG9hJ2Ou-nERw-Py7nJbLB3k2Lb7eAwZaauz2JMgzBJ4TeclTHwY9Bn79MIUuUybMMcTR4M0_2j2Zd9vP4ywytjP2ACJw0qCCf8eOMlDwS-hGAvVBFE8a8NlUSwYDb0YeRBDFbjobip6Sw</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI0MjE3LCJleHAiOjE2ODUxMjYwMTcsIm5iZiI6MTY4NTEyNDIxNywianRpIjoiNkZxNmVzU3B4bEZPeTlYUCIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.V-pv-RsEn0joA5nYYGduwzp1KXYI6enN__IgRcvJgh228pVO6KYG95iOXVCcMl_5SpeoE8FjupDLIfQnc6P5LZvWQR8TQBj8ynouKgnUIU2zH797hsxN1DkoMzgGeJqNYxVguD4kWc9jS3huA6NSnwJeLxmXmHhWLCSYxdx29xpdt3Q35j1vGFZbeBA91qjRv-4dgquhBS3Y8uFjMUk-GuRK3kFNmnCvqLORPTajAJPIWHGZoRyrsne6BtpjmafLhgIO-jtRztetX_a0H60GgGpxU-R2yD5NMgLNw3-9j-Tob8fuexwat3dck8XpooB7wUREhj373jiygF_rcdYa-VWmzWv5HbV3ujXJkYWKvwIHlgFx8HvTd8uWnCKgxRVKmjnTTNXlxYR6cIAzdVoz8JJUxLFfISY2uz9MaxXhHWWwNGbEZFhLtriJxVuqwL7kCnyFpVIzsDDIK5mxZc6Mxa4AGer6GT6Bkkg8e5dYM1N7X5diqQQAVVE_nqVIqsHbH2iwjjMvMD4uF8n0TYpPgiFwtkdWcVG9hJ2Ou-nERw-Py7nJbLB3k2Lb7eAwZaauz2JMgzBJ4TeclTHwY9Bn79MIUuUybMMcTR4M0_2j2Zd9vP4ywytjP2ACJw0qCCf8eOMlDwS-hGAvVBFE8a8NlUSwYDb0YeRBDFbjobip6Sw' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "carlotta.greenfelder@gmail.com"
+}'</code></pre>
+    </div>
+</body>
+</html>
