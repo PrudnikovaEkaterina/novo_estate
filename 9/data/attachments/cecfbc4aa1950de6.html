@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 0,
+    "phone": null,
+    "name": "Mable",
+    "role": 0,
+    "manager_id": null,
+    "email": "elayne.robel@yahoo.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI4OTU5LCJleHAiOjE2ODUxMzA3NTksIm5iZiI6MTY4NTEyODk1OSwianRpIjoibFd2enI5RElxUTJOYldqZiIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.t_2MvPfZUfsE3Z3Vo_WQd4Bl7ISnOi8voUIf5D2qMRE4cEj7zfy4Rmk45IqrwBPy3TWNFN__69jkz4HC4BFPQwj_AZ-AZODeryKiAHs_Zo_O4MQqCgY3iahHGmr6j-Rjoot1N84fNy-bdZa9Yo7htDVhfEKx2gdO3iGeUi6VSKFNBGdUxhBftwXu8Y_on3zQ4cHY64F1Lq5YEO3LKHZRVKOi4RFh60I-EeaTHW9f1sy_FcSZWkQNBlGy3VgzT9bvBO0TBJxd-nj5Vb8SmFgcIuHRr3471KG05YwWSuYe88muQfaQw2bAVA9K0cmT3aGhc_Ot9S93dJVe7jq1IRCU1auk5cMaXzobfWVVBhx3BZ3vIiwOYAQWxwY_kPjP38N8YANGJAZCsoKJOXIhs7jq43RyqPgGo0CJV1LB_zhq2kIeUpu1b8gSLBY-Etuu7E1aDOpyAsySI9hBt3CC59SeOHeG2AuwgcN87Ry4lT9nj3lJcdt8qAxvqjuFSw6osm_rVP3q2L2n9n5YlD4I7gRPbNTCGAyMcvCvd_iZPM84TmREb26HnrTl_Olpm-NPMtG1oWZjnmOQeVI7LDy-iECPQz1IuiLIoEK6qxYJW_6ynaMAQ353uinV4HoPmZpp9Pwd8cdMrgefMaahJIHXDVQbC6eXD47FPMcjcrZIhk_F1JI</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI4OTU5LCJleHAiOjE2ODUxMzA3NTksIm5iZiI6MTY4NTEyODk1OSwianRpIjoibFd2enI5RElxUTJOYldqZiIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.t_2MvPfZUfsE3Z3Vo_WQd4Bl7ISnOi8voUIf5D2qMRE4cEj7zfy4Rmk45IqrwBPy3TWNFN__69jkz4HC4BFPQwj_AZ-AZODeryKiAHs_Zo_O4MQqCgY3iahHGmr6j-Rjoot1N84fNy-bdZa9Yo7htDVhfEKx2gdO3iGeUi6VSKFNBGdUxhBftwXu8Y_on3zQ4cHY64F1Lq5YEO3LKHZRVKOi4RFh60I-EeaTHW9f1sy_FcSZWkQNBlGy3VgzT9bvBO0TBJxd-nj5Vb8SmFgcIuHRr3471KG05YwWSuYe88muQfaQw2bAVA9K0cmT3aGhc_Ot9S93dJVe7jq1IRCU1auk5cMaXzobfWVVBhx3BZ3vIiwOYAQWxwY_kPjP38N8YANGJAZCsoKJOXIhs7jq43RyqPgGo0CJV1LB_zhq2kIeUpu1b8gSLBY-Etuu7E1aDOpyAsySI9hBt3CC59SeOHeG2AuwgcN87Ry4lT9nj3lJcdt8qAxvqjuFSw6osm_rVP3q2L2n9n5YlD4I7gRPbNTCGAyMcvCvd_iZPM84TmREb26HnrTl_Olpm-NPMtG1oWZjnmOQeVI7LDy-iECPQz1IuiLIoEK6qxYJW_6ynaMAQ353uinV4HoPmZpp9Pwd8cdMrgefMaahJIHXDVQbC6eXD47FPMcjcrZIhk_F1JI' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 0,
+    "phone": null,
+    "name": "Mable",
+    "role": 0,
+    "manager_id": null,
+    "email": "elayne.robel@yahoo.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}'</code></pre>
+    </div>
+</body>
+</html>

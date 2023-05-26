@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "jona.marquardt@hotmail.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI4OTU2LCJleHAiOjE2ODUxMzA3NTYsIm5iZiI6MTY4NTEyODk1NiwianRpIjoiS29CUkxramEwSlo3MHBWNiIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.Nt3EtDbiswQAOHT5FraWTL74uCXrSGTIE29x8Q4ZNpGDJKXfvJc_AXRnRN_6o1kH6r6jRHsRFSTBB-od93ESdMDsTrh_n7Uptp0pHLp-jg1NiTqMqqySm-iEUD63-_gBW9RMYUWx_KerulEKg1QdPjjGP--FA1LYR6NZaukN3JCp09M-Q70IgW9LMxPtkE3GKL1I0mUH1AqRM3oS-4oXQbXF9DNNVTaRtZFwqs-eWKHSuW6RHHCmNY3i0dSKpyYniz3W3kS5F-GGVkGyKJin2oT60y-oN8Lma5lQlW0KdZ2TLWae-r8nMEt3kZ_4V39oZqMsAGorxW-v5KK-9q-UZGSyQWCy28kjp34dz7-qoDdwImZ1-LqaRQ_OkHrwpQt4o_D-ziLlOvnhwzrxpCVdDO0o_8deHKMvJWqQGf2Ymn1qVbb6HfelwhHklZWv1uIINMExFt2wUy71QNz8Vgg7lExUnLmR-uGm77wI89gBsJbOCQNFvjkvQPDdERGhLm-eEkwTpljnGzBtclM49AkO08IqCxWNaGguW7jedLcy5d_RDS9BL7J-zDwy4kwcbboPOpgA6ddvgGIaMNbasj2efgUMZVH5C3uf9zC1xS8_1H5UIr4CJSMU8PScpj58h3j_aqYMQAaQEC2xnwa7O8kwIbfLbZBlO5bMOuSWdqyJdNY</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI4OTU2LCJleHAiOjE2ODUxMzA3NTYsIm5iZiI6MTY4NTEyODk1NiwianRpIjoiS29CUkxramEwSlo3MHBWNiIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.Nt3EtDbiswQAOHT5FraWTL74uCXrSGTIE29x8Q4ZNpGDJKXfvJc_AXRnRN_6o1kH6r6jRHsRFSTBB-od93ESdMDsTrh_n7Uptp0pHLp-jg1NiTqMqqySm-iEUD63-_gBW9RMYUWx_KerulEKg1QdPjjGP--FA1LYR6NZaukN3JCp09M-Q70IgW9LMxPtkE3GKL1I0mUH1AqRM3oS-4oXQbXF9DNNVTaRtZFwqs-eWKHSuW6RHHCmNY3i0dSKpyYniz3W3kS5F-GGVkGyKJin2oT60y-oN8Lma5lQlW0KdZ2TLWae-r8nMEt3kZ_4V39oZqMsAGorxW-v5KK-9q-UZGSyQWCy28kjp34dz7-qoDdwImZ1-LqaRQ_OkHrwpQt4o_D-ziLlOvnhwzrxpCVdDO0o_8deHKMvJWqQGf2Ymn1qVbb6HfelwhHklZWv1uIINMExFt2wUy71QNz8Vgg7lExUnLmR-uGm77wI89gBsJbOCQNFvjkvQPDdERGhLm-eEkwTpljnGzBtclM49AkO08IqCxWNaGguW7jedLcy5d_RDS9BL7J-zDwy4kwcbboPOpgA6ddvgGIaMNbasj2efgUMZVH5C3uf9zC1xS8_1H5UIr4CJSMU8PScpj58h3j_aqYMQAaQEC2xnwa7O8kwIbfLbZBlO5bMOuSWdqyJdNY' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "jona.marquardt@hotmail.com"
+}'</code></pre>
+    </div>
+</body>
+</html>
