@@ -33,8 +33,8 @@ public interface ProjectConfig extends Config {
     String browserSize();
 
 
-    @Key("remote")
-    String remote();
+//    @Key("remote")
+//    String remote();
 
 }
 
