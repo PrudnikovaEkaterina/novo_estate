@@ -32,7 +32,7 @@ public class NovostroykiPage {
 
 
     public void openNovostroykiPage() {
-        open(baseUrl+"/novostroyki");
+        open("/novostroyki");
     }
 
 
