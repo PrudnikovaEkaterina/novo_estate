@@ -23,7 +23,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
 
     @BeforeEach
     void beforeEach() {
-        open("https://novo-dom.ru/novostroyki");
+        novostroykiPage.openNovostroykiPage();
     }
 
     @Test

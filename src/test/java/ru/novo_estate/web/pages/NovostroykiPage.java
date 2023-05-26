@@ -33,7 +33,7 @@ public class NovostroykiPage {
 
     public void openNovostroykiPage() {
 
-        open("/novostroyki");
+        open("https://novo-dom.ru/novostroyki");
     }
 
 
