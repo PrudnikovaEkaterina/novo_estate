@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 0,
+    "phone": null,
+    "name": "Lurlene",
+    "role": 0,
+    "manager_id": null,
+    "email": "donovan.schumm@gmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI2MTI2LCJleHAiOjE2ODUxMjc5MjYsIm5iZiI6MTY4NTEyNjEyNiwianRpIjoiSHV6bDhvMWRWdUdHSnZLbyIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.d957IQs1ISeajioWNnWawliUgKYSHXPjVYPZeJQFEHHEYD_9-kFoJ84AMi-pOoEqnT307kyOvspTlB_jMKBDh-VCiemtrKZstRzUPbXFqBhJAcC67pON0mkc0ijY6DmKmika9JJOCFRAbuzgHh4b-qRR05S__hSelHbaG_vLNRf0XY-XE7wLZhse7f_awuzknk4pl1_aVDsDISYo6-dgI2UdM--O9jd01aV-RhFKE2li7CCO98UK7eqAh2yYimjZu69yERl_IAJpfQxCWA7kvt8wQp838BfqBtL9L5f2dF6JuNxLMSX5F909h7cJ9b9lqdac4YpFaeg2sPGAsyA1B-_z7Py7tKBj9NZh3s73MRgl5mDr_KgMyX-z9W-EQsY3SV5WSKDMdTAGyBONPbLEKQ8p2opKk_i13GKKGZWdjVersDVjAbeHgv7A-Rc6Gl5xfwtN7LI7eJOw2z3IakwEgQzKejWLkwIvvQFgyqiF6AQzTPjV2wFct7imjGTS6yg01k3n2au_pCTZFcfmF8aQdxzaym1Ly3hc8ZLpUe_7JE3os9WB56Q1Irxn7Kum_JVm_c_xl_V1wLRJqLcc6d2xuObC-aqDrQCOlaT2xWHQfdsrOUQ1Pl2xX8_PNjQ21jnXyybuX-XXS-21uNe0aHbgkQiUVzrsNvZfo0zqjPb5mTI</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI2MTI2LCJleHAiOjE2ODUxMjc5MjYsIm5iZiI6MTY4NTEyNjEyNiwianRpIjoiSHV6bDhvMWRWdUdHSnZLbyIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.d957IQs1ISeajioWNnWawliUgKYSHXPjVYPZeJQFEHHEYD_9-kFoJ84AMi-pOoEqnT307kyOvspTlB_jMKBDh-VCiemtrKZstRzUPbXFqBhJAcC67pON0mkc0ijY6DmKmika9JJOCFRAbuzgHh4b-qRR05S__hSelHbaG_vLNRf0XY-XE7wLZhse7f_awuzknk4pl1_aVDsDISYo6-dgI2UdM--O9jd01aV-RhFKE2li7CCO98UK7eqAh2yYimjZu69yERl_IAJpfQxCWA7kvt8wQp838BfqBtL9L5f2dF6JuNxLMSX5F909h7cJ9b9lqdac4YpFaeg2sPGAsyA1B-_z7Py7tKBj9NZh3s73MRgl5mDr_KgMyX-z9W-EQsY3SV5WSKDMdTAGyBONPbLEKQ8p2opKk_i13GKKGZWdjVersDVjAbeHgv7A-Rc6Gl5xfwtN7LI7eJOw2z3IakwEgQzKejWLkwIvvQFgyqiF6AQzTPjV2wFct7imjGTS6yg01k3n2au_pCTZFcfmF8aQdxzaym1Ly3hc8ZLpUe_7JE3os9WB56Q1Irxn7Kum_JVm_c_xl_V1wLRJqLcc6d2xuObC-aqDrQCOlaT2xWHQfdsrOUQ1Pl2xX8_PNjQ21jnXyybuX-XXS-21uNe0aHbgkQiUVzrsNvZfo0zqjPb5mTI' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 0,
+    "phone": null,
+    "name": "Lurlene",
+    "role": 0,
+    "manager_id": null,
+    "email": "donovan.schumm@gmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}'</code></pre>
+    </div>
+</body>
+</html>
