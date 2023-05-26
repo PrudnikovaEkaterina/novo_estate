@@ -21,16 +21,17 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     NovostroykiPage novostroykiPage = new NovostroykiPage();
     SearchNovostroykiFilters searchFilters = new SearchNovostroykiFilters();
 
-    @BeforeEach
-    void beforeEach() {
-        novostroykiPage.openNovostroykiPage();
-    }
+//    @BeforeEach
+//    void beforeEach() {
+//        novostroykiPage.openNovostroykiPage();
+//    }
 
     @Test
     @Owner("PrudnikovaEkaterina")
     @Tag("Web")
     @DisplayName("Проверить результаты поиска по ЖК на странице /novostroyki")
     void searchNovostroyka() {
+        open("https://novo-dom.ru/novostroyki");
         String searchBuildingName = GenerationData.setRandomBuilding(BuildingEnum.values());
         searchFilters.setValueInGeoSearchFilter(searchBuildingName)
                 .selectDropdownItem(searchBuildingName);
@@ -42,6 +43,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     @Tag("Web")
     @DisplayName("Проверить результаты поиска ЖК по району на странице /novostroyki")
     void searchDistrict() {
+        open("https://novo-dom.ru/novostroyki");
         String searchDistrictName = "Арбат";
         searchFilters.setValueInGeoSearchFilter(searchDistrictName)
                 .selectDropdownDistrict(searchDistrictName);
@@ -53,6 +55,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     @Tag("Web")
     @DisplayName("Проверить результаты поиска ЖК по городу на странице /novostroyki")
     void searchCity() {
+        open("https://novo-dom.ru/novostroyki");
         String searchCityName = GenerationData.setRandomCity(CityEnum.values());
         searchFilters.setValueInGeoSearchFilter(searchCityName)
                 .selectDropdownCity(searchCityName);
@@ -65,6 +68,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     @Tag("Web")
     @DisplayName("Проверить результаты поиска ЖК по округу на странице /novostroyki")
     void searchСounty() {
+        open("https://novo-dom.ru/novostroyki");
         String searchCountyName = "Восточный административный округ";
         String verifyCountyName = "ВАО";
         searchFilters.setValueInGeoSearchFilter(searchCountyName)
@@ -77,6 +81,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     @Tag("Web")
     @DisplayName("Проверить результаты поиска ЖК по застройщику на странице /novostroyki")
     void searchDeveloper() {
+        open("https://novo-dom.ru/novostroyki");
         String searchDeveloperName = GenerationData.setRandomDeveloper(DeveloperEnum.values());
         searchFilters.setValueInGeoSearchFilter(searchDeveloperName)
                 .selectDropdownItem(searchDeveloperName);
@@ -89,6 +94,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     @Owner("PrudnikovaEkaterina")
     @Tag("Web")
     void setFilterRoomsAndVerifyResultSearch(RoomEnum roomEnum) {
+        open("https://novo-dom.ru/novostroyki");
         String rooms = roomEnum.name;
         searchFilters.clickCheckboxFilterRooms(rooms);
         novostroykiPage.verifyResultSearchByFilterRooms(rooms);
@@ -99,6 +105,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     @Owner("PrudnikovaEkaterina")
     @Tag("Web")
     void setPriceFromFilter(String data1, String data2) {
+        open("https://novo-dom.ru/novostroyki");
         searchFilters.setPriceFrom(data1);
         novostroykiPage.verifyTagVisible(data2);
     }
@@ -108,6 +115,7 @@ public class SearchNovostroykiFiltersTests extends TestBase {
     @Owner("PrudnikovaEkaterina")
     @Tag("Web")
     void setPriceToFilter(String data1, String data2) {
+        open("https://novo-dom.ru/novostroyki");
         searchFilters.setPriceTo(data1);
         novostroykiPage.verifyTagVisible(data2);
     }
