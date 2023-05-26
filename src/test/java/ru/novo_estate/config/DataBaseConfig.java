@@ -12,7 +12,7 @@ import org.aeonbits.owner.Config;
 
 public interface DataBaseConfig extends Config {
     @Config.Key("dataSourceUrl")
-    @Config.DefaultValue("jdbc:mysql://agency.novo-estate.ru:3306/agency_novo-estate_ru?useSSL=false")
+    @Config.DefaultValue("jdbc:mysql://novo-dom.ru:3306/agency_novo-estate_ru?useSSL=false")
     String dataSourceUrl();
 
     @Config.Key("dataSourceUser")

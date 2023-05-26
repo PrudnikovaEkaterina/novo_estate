@@ -10,7 +10,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.novo_estate.config.ProjectConfig;
 import ru.novo_estate.web.helpers.Attach;
-
 import java.util.Map;
 
 public class TestBase {

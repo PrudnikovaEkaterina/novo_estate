@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Assertions;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.url;
 
@@ -28,7 +29,7 @@ public class Header {
     }
 
     public void verifyUrlAfterFollowingNovostroykiLink() {
-        Assertions.assertEquals("https://novo-estate.ru/novostroyki", url());
+        Assertions.assertEquals(baseUrl+"/novostroyki", url());
     }
 
 
@@ -50,7 +51,7 @@ public class Header {
     }
 
     public void verifyUrlFollowingAboutLink() {
-        Assertions.assertEquals("https://novo-estate.ru/about", url());
+        Assertions.assertEquals(baseUrl+"/about", url());
     }
 
 
@@ -61,7 +62,7 @@ public class Header {
     }
 
     public void verifyUrlFollowingContactsLink() {
-        Assertions.assertEquals("https://novo-estate.ru/contacts", url());
+        Assertions.assertEquals(baseUrl+"/contacts", url());
     }
 
 
@@ -72,7 +73,7 @@ public class Header {
     }
 
     public void verifyUrlFollowingSingInLink() {
-        Assertions.assertEquals("https://novo-estate.ru/auth", url());
+        Assertions.assertEquals(baseUrl+"/auth", url());
     }
 
     public void hoverHeaderAccountIconAndCheckUserMenuDropdownText() {

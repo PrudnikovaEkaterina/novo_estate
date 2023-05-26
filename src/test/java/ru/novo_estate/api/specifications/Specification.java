@@ -1,9 +1,12 @@
 package ru.novo_estate.api.specifications;
 
+import com.codeborne.selenide.Configuration;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.aeonbits.owner.ConfigCache;
+import ru.novo_estate.config.ProjectConfig;
 
 import static io.restassured.RestAssured.with;
 import static io.restassured.filter.log.LogDetail.BODY;
@@ -11,9 +14,11 @@ import static io.restassured.filter.log.LogDetail.STATUS;
 import static ru.novo_estate.api.helpers.CustomAllureListener.withCustomTemplates;
 
 public class Specification {
+    static ProjectConfig projectConfig = ConfigCache.getOrCreate(ProjectConfig.class);
+
     public static RequestSpecification requestSpec = with()
             .filter(withCustomTemplates())
-            .baseUri("https://novo-estate.ru")
+            .baseUri(projectConfig.baseUri())
             .log().all()
             .contentType(ContentType.JSON);
 

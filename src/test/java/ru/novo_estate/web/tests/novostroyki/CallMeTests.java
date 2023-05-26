@@ -10,6 +10,8 @@ import ru.novo_estate.web.domain.CallbackPhonesBD;
 
 import java.util.List;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
+
 public class CallMeTests extends TestBase {
     NovostroykiPage novostroykiPage = new NovostroykiPage();
    CallbackPhonesManager callbackPhonesManager=new CallbackPhonesManager();
@@ -31,7 +33,7 @@ public class CallMeTests extends TestBase {
                 .setPhoneNumber(phoneNumber).clickCallMeButton().verifyPhoneThanksModalTitle(phoneThanksModalTitle);
         List<CallbackPhonesBD> result =callbackPhonesManager.selectLastEntryFromCallbackPhonesTables();
         Assertions.assertEquals(phoneNumber, result.get(0).getPhone());
-        Assertions.assertEquals("https://novo-estate.ru/novostroyki", result.get(0).getLink());
+        Assertions.assertEquals(baseUrl+"/novostroyki", result.get(0).getLink());
 
 
     }

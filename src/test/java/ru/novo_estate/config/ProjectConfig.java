@@ -13,8 +13,12 @@ import org.aeonbits.owner.Config;
 public interface ProjectConfig extends Config {
 
     @Key("baseUrl")
-    @DefaultValue("https://novo-estate.ru")
+    @DefaultValue("https://novo-dom.ru")
     String baseUrl();
+
+    @Key("baseUri")
+    @DefaultValue("https://novo-dom.ru")
+    String baseUri();
 
     @Key("browser")
     @DefaultValue("chrome")
