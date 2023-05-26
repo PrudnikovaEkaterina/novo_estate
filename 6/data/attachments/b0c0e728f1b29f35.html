@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "candi.gleason@gmail.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI1ODQwLCJleHAiOjE2ODUxMjc2NDAsIm5iZiI6MTY4NTEyNTg0MCwianRpIjoiazNGV240MEhwWDc5WGxucSIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.DthX3VF8th5eCTkR_BwvRBB8p3XHQqLCPLDWiz41Dfpz2BP6DL5pW2U2XTMRJpqKnXMShlV9_vD7VvPYz8hatILf_1TKbbCbVPW0FG7BFUeWo6NZXNiC-oPiYpiYpiKFR3ZwTWI6JjbJXEzNQrCcZ9znE2P7alpQtqGpoGZuM0DQFEOblQGFySQYCKJrwYRA_Nodo4nmjse4En7Fi42D7n0RcU4a7MyI4mDQImNHb6GSSEyWAnTreHEU8RBQa5bVp6akZxlxk9gBdffp-k7rUYx1cDfiRpgfN03qaROp0OOkHS5CjhA3Fqrdj3Q5hNgvxhcuRC70R-GYwpbDHbNfRF_MtTIdC2XsSNWwXKPZBD5R9ylgd8TQrjVHk83mXMD6tQumUzAxqDZVctNyhgjN6EbaUrOHMjBheIL8ds6FQrIDqlg6j6-wvf7ZIF7o5Kfm0ju60JyQoQKJZGK4KYFHO53cStojtduLoG_Ooqk8gk6mdhHO8XYNw58LSdtkru1NXG59dHt_Ibw2wFufisnEO148Sc27MtdlEXU6KKfy_ox7sUVghYaOV8HWxOxTXR-lGQt1fjHTzl-VOfXNIsDSnAuNGyKhcQJ65BDCGrXDTZTkSS1c10W6qzidr0Rev9WLaeP-D1zJdtG7C9CctfcEdqtgq87Q5N9bHAaZDbqoPJw</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI1ODQwLCJleHAiOjE2ODUxMjc2NDAsIm5iZiI6MTY4NTEyNTg0MCwianRpIjoiazNGV240MEhwWDc5WGxucSIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.DthX3VF8th5eCTkR_BwvRBB8p3XHQqLCPLDWiz41Dfpz2BP6DL5pW2U2XTMRJpqKnXMShlV9_vD7VvPYz8hatILf_1TKbbCbVPW0FG7BFUeWo6NZXNiC-oPiYpiYpiKFR3ZwTWI6JjbJXEzNQrCcZ9znE2P7alpQtqGpoGZuM0DQFEOblQGFySQYCKJrwYRA_Nodo4nmjse4En7Fi42D7n0RcU4a7MyI4mDQImNHb6GSSEyWAnTreHEU8RBQa5bVp6akZxlxk9gBdffp-k7rUYx1cDfiRpgfN03qaROp0OOkHS5CjhA3Fqrdj3Q5hNgvxhcuRC70R-GYwpbDHbNfRF_MtTIdC2XsSNWwXKPZBD5R9ylgd8TQrjVHk83mXMD6tQumUzAxqDZVctNyhgjN6EbaUrOHMjBheIL8ds6FQrIDqlg6j6-wvf7ZIF7o5Kfm0ju60JyQoQKJZGK4KYFHO53cStojtduLoG_Ooqk8gk6mdhHO8XYNw58LSdtkru1NXG59dHt_Ibw2wFufisnEO148Sc27MtdlEXU6KKfy_ox7sUVghYaOV8HWxOxTXR-lGQt1fjHTzl-VOfXNIsDSnAuNGyKhcQJ65BDCGrXDTZTkSS1c10W6qzidr0Rev9WLaeP-D1zJdtG7C9CctfcEdqtgq87Q5N9bHAaZDbqoPJw' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "candi.gleason@gmail.com"
+}'</code></pre>
+    </div>
+</body>
+</html>
