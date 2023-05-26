@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "hallie.reichel@hotmail.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI5MzUwLCJleHAiOjE2ODUxMzExNTAsIm5iZiI6MTY4NTEyOTM1MCwianRpIjoiMnRaRkt3SUNzbmJuR2pXcCIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.hrwe5X78AHhRAqxdDIFCjht_zEOnuhTQoVmbQqqdfQ3JihG607ff6sAvbMJLu4sUtyNm6fyMMnJ-WRjhta3yG-fcI0KvI4CZ5O3EO_u9MjVsT-s2pE0xpLLNnaUrkY9L6ihqPAYXWOUQgJBGa97zPXmnoL8kyKsbN9QRbo3WZGolZtRS0eYW54lvlp-s6YdFxIxIQDiYpqwOQ2T8bniCqZMw49H6PD9t1N5q0XsuJG-Do9KVbmnffL_KZ7ulnIEJIS_FJO4J0Cc2pj0FxRe7-Ogsy1Tqk-UsYOMbek6R9NSvNDj0DB0KE4MTv3bxCjbmuxVHd76zRdwkADCijtRItAQxSpIWB8zi3ffYUMEy1nTaqM-mGhwZDHyK1cTAyOgqUIxFo9Tfxd_ustClNDsryvV-LL7rFBfI-UOgwv6YDvmDtPBiG9p5TdRj97e0bdVqAGbInSTmTWlznjbRI-KNPkDxuCuItAu1Hv54z3eeN5SaR8N-Ru6ZhGq-LWcPxX3Lj-UMz6JKApPBLLvMUjxa4U3MaOWrl5_g6_7v3zCX0NgLaFFRHQMIscXZTlTo32FKrrZFX_yXI_pfgVruJVD9519lEoqwmIpu0FWststMOncrkH3UTj90OqV45DW3iBeiVYgc8oJRP8CxL8_KB4NesrGwQ8hZnopjzqqG5l5mrhs</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI5MzUwLCJleHAiOjE2ODUxMzExNTAsIm5iZiI6MTY4NTEyOTM1MCwianRpIjoiMnRaRkt3SUNzbmJuR2pXcCIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.hrwe5X78AHhRAqxdDIFCjht_zEOnuhTQoVmbQqqdfQ3JihG607ff6sAvbMJLu4sUtyNm6fyMMnJ-WRjhta3yG-fcI0KvI4CZ5O3EO_u9MjVsT-s2pE0xpLLNnaUrkY9L6ihqPAYXWOUQgJBGa97zPXmnoL8kyKsbN9QRbo3WZGolZtRS0eYW54lvlp-s6YdFxIxIQDiYpqwOQ2T8bniCqZMw49H6PD9t1N5q0XsuJG-Do9KVbmnffL_KZ7ulnIEJIS_FJO4J0Cc2pj0FxRe7-Ogsy1Tqk-UsYOMbek6R9NSvNDj0DB0KE4MTv3bxCjbmuxVHd76zRdwkADCijtRItAQxSpIWB8zi3ffYUMEy1nTaqM-mGhwZDHyK1cTAyOgqUIxFo9Tfxd_ustClNDsryvV-LL7rFBfI-UOgwv6YDvmDtPBiG9p5TdRj97e0bdVqAGbInSTmTWlznjbRI-KNPkDxuCuItAu1Hv54z3eeN5SaR8N-Ru6ZhGq-LWcPxX3Lj-UMz6JKApPBLLvMUjxa4U3MaOWrl5_g6_7v3zCX0NgLaFFRHQMIscXZTlTo32FKrrZFX_yXI_pfgVruJVD9519lEoqwmIpu0FWststMOncrkH3UTj90OqV45DW3iBeiVYgc8oJRP8CxL8_KB4NesrGwQ8hZnopjzqqG5l5mrhs' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "hallie.reichel@hotmail.com"
+}'</code></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 0,
+    "phone": null,
+    "name": "Lonnie",
+    "role": 0,
+    "manager_id": null,
+    "email": "buford.boyle@yahoo.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI5MzUzLCJleHAiOjE2ODUxMzExNTMsIm5iZiI6MTY4NTEyOTM1MywianRpIjoiTnB4TEpTQkFyVzBMQWs0OSIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.L6ULfWFh7uoSwHVFcYS155ooeeJA6fv1T4FmO4i7BcHEICE2C0hMLfOfpUXCOjdNKDITly2aIiaZtT4eWs1zwXHj1OBWawDp-skZv-2tkzMnaDHZ3ZH1lPD0jO6rotJrS4745zrq_mZpd6iXJC3fmlxGdkvk-2se3nzxUj8XlQUU0yC1It7-RWwfbmEhasws24yy7BWa39mZQSh5uVqqz6tF6CN606UDFY7j1R69xcxysaoBW_8OpgxQiU_dtlN2TaLlDHOzEmVBlw06BF3TAYnlYRKXwDm29GYcN04Q8sAnby6LTh_YiA5Gfk6K4h_1CFFmSK58opn4F05hXWomD5e2rdQXyVx6Tbak5ajQVhMh7MwzDoSK8ot03qEcskND5FFboVR9KIipmUgLRGzJn76QaapA_9yP_KHASYicWWXxzenKvT-P17lj6sfb0W9IKn2a64wNm9DpskqZMJElFvNT89qltC554gCLo4byc5tm5RZDUuErj1UMw8CJeYwHhtQdAwlk8Razs2aYxucm4UBdstvoF91BgK9qSdJ9lGVeQs_ifNe0y05grnfP_nm42hphwj1iNRfL0Br00ZfzrSP5IyfkvHaQjnPxqKJNfoavji9ccExy_nHP-EFoWaTDftdaCyW9ceDMEVIfCA31_t57_qVih92lT82qC3782XQ</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTI5MzUzLCJleHAiOjE2ODUxMzExNTMsIm5iZiI6MTY4NTEyOTM1MywianRpIjoiTnB4TEpTQkFyVzBMQWs0OSIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.L6ULfWFh7uoSwHVFcYS155ooeeJA6fv1T4FmO4i7BcHEICE2C0hMLfOfpUXCOjdNKDITly2aIiaZtT4eWs1zwXHj1OBWawDp-skZv-2tkzMnaDHZ3ZH1lPD0jO6rotJrS4745zrq_mZpd6iXJC3fmlxGdkvk-2se3nzxUj8XlQUU0yC1It7-RWwfbmEhasws24yy7BWa39mZQSh5uVqqz6tF6CN606UDFY7j1R69xcxysaoBW_8OpgxQiU_dtlN2TaLlDHOzEmVBlw06BF3TAYnlYRKXwDm29GYcN04Q8sAnby6LTh_YiA5Gfk6K4h_1CFFmSK58opn4F05hXWomD5e2rdQXyVx6Tbak5ajQVhMh7MwzDoSK8ot03qEcskND5FFboVR9KIipmUgLRGzJn76QaapA_9yP_KHASYicWWXxzenKvT-P17lj6sfb0W9IKn2a64wNm9DpskqZMJElFvNT89qltC554gCLo4byc5tm5RZDUuErj1UMw8CJeYwHhtQdAwlk8Razs2aYxucm4UBdstvoF91BgK9qSdJ9lGVeQs_ifNe0y05grnfP_nm42hphwj1iNRfL0Br00ZfzrSP5IyfkvHaQjnPxqKJNfoavji9ccExy_nHP-EFoWaTDftdaCyW9ceDMEVIfCA31_t57_qVih92lT82qC3782XQ' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 0,
+    "phone": null,
+    "name": "Lonnie",
+    "role": 0,
+    "manager_id": null,
+    "email": "buford.boyle@yahoo.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}'</code></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+[2023-05-26T19:29:18.314Z] [SEVERE] https://sflog.ru/gtm/?term=0&id=4e8a49817a963784482dea98a8ff39cc - Failed to load resource: the server responded with a status of 403 ()
+[2023-05-26T19:29:18.796Z] [SEVERE] https://sflog.ru/gtm/?term=0&id=4e8a49817a963784482dea98a8ff39cc - Failed to load resource: the server responded with a status of 403 ()
+[2023-05-26T19:29:19.782Z] [SEVERE] https://novo-dom.ru/api/auth/register - Failed to load resource: the server responded with a status of 429 (Too Many Requests)
+[2023-05-26T19:29:19.791Z] [SEVERE] https://novo-dom.ru/build/desktop/js/vendors.3be5d4c5.js 0:11485 M
