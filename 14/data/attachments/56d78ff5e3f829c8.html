@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 0,
+    "phone": null,
+    "name": "Tiesha",
+    "role": 0,
+    "manager_id": null,
+    "email": "luann.treutel@yahoo.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg3NjcwLCJleHAiOjE2ODUxODk0NzAsIm5iZiI6MTY4NTE4NzY3MCwianRpIjoiMklFN3RSZld0clM1MjdpaiIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.h11SVL6zY8CJUuPvaB3dsvp6ujmAg6vwaqcG62UQhb5hHDXtPgOR9CfrDWCuqg5SvbbzTv_AFo91n935oceKQfDC503NWzfCZ7oLdOmnVW3xUTiMyfeivWHNHqc_qM8vHZit_1uCyDfHKO7UL878Yf-ccQ5o2Sfgig9dI-KJnzwLyda9p5jgm7lpfqCoxGCeO_etkZdryLVgLNDSnPro9SkBjHLQVUamogP9LyZX1ScZ1mC5wpbbzzb0JTV-POh0VfeBY__ArxFFnODr74BSRpFo8MdTH1_KdPlYByYf0ZxHHhg-Av3y4gkfMwEZQGrgnVAf3BpwqlKcDb0CtzX7OuoihHMsOyJ7Qn08e1wqxlGNAiMBS1S0w9Rnl9WgNXy-BvQjLpyrKhB_hl4UlMXW59tQFkyWSlmtbJcm0U11fvl-cPiR9_57U6mJEYEr22k2O0mDeToTnEa6Lq-Sg6XL-jraXOe2TkmSDMtiaU3N8YAo4RSezCKl-r44cVRi1ZuOzXVMNHHhuywei_Zj2lVNX2X2qrv9mFgCz1mm_jpOV7mTm-4wMERGdtge7N7LM1aHIa6FyB0YSMkwmppX-_gQPeJU8x8Rk7N63hXMc_2w7TmJgbQZ6pRS63CNmS7OSQHjbWfKIKFge4kSKFT9Gl5uhvKXHBDr3A9pyY-7IcfiWIQ</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg3NjcwLCJleHAiOjE2ODUxODk0NzAsIm5iZiI6MTY4NTE4NzY3MCwianRpIjoiMklFN3RSZld0clM1MjdpaiIsInN1YiI6IjE3MiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.h11SVL6zY8CJUuPvaB3dsvp6ujmAg6vwaqcG62UQhb5hHDXtPgOR9CfrDWCuqg5SvbbzTv_AFo91n935oceKQfDC503NWzfCZ7oLdOmnVW3xUTiMyfeivWHNHqc_qM8vHZit_1uCyDfHKO7UL878Yf-ccQ5o2Sfgig9dI-KJnzwLyda9p5jgm7lpfqCoxGCeO_etkZdryLVgLNDSnPro9SkBjHLQVUamogP9LyZX1ScZ1mC5wpbbzzb0JTV-POh0VfeBY__ArxFFnODr74BSRpFo8MdTH1_KdPlYByYf0ZxHHhg-Av3y4gkfMwEZQGrgnVAf3BpwqlKcDb0CtzX7OuoihHMsOyJ7Qn08e1wqxlGNAiMBS1S0w9Rnl9WgNXy-BvQjLpyrKhB_hl4UlMXW59tQFkyWSlmtbJcm0U11fvl-cPiR9_57U6mJEYEr22k2O0mDeToTnEa6Lq-Sg6XL-jraXOe2TkmSDMtiaU3N8YAo4RSezCKl-r44cVRi1ZuOzXVMNHHhuywei_Zj2lVNX2X2qrv9mFgCz1mm_jpOV7mTm-4wMERGdtge7N7LM1aHIa6FyB0YSMkwmppX-_gQPeJU8x8Rk7N63hXMc_2w7TmJgbQZ6pRS63CNmS7OSQHjbWfKIKFge4kSKFT9Gl5uhvKXHBDr3A9pyY-7IcfiWIQ' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 0,
+    "phone": null,
+    "name": "Tiesha",
+    "role": 0,
+    "manager_id": null,
+    "email": "luann.treutel@yahoo.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}'</code></pre>
+    </div>
+</body>
+</html>
