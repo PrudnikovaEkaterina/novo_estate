@@ -24,17 +24,16 @@ public interface ProjectConfig extends Config {
     @DefaultValue("chrome")
     String browser();
 
-//    @Key("browserVersion")
-//    @DefaultValue("100")
-//    String browserVersion();
-//
-//    @Key("browserSize")
-//    @DefaultValue("1366x900")
-//    String browserSize();
+    @Key("browserVersion")
+    String browserVersion();
+
+    @Key("browserSize")
+    @DefaultValue("1366x900")
+    String browserSize();
 
 
-//    @Key("remote")
-//    String remote();
+    @Key("remote")
+    String remote();
 
 }
 

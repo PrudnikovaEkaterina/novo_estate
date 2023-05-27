@@ -9,7 +9,7 @@ import ru.novo_estate.api.steps.profile.ProfileSteps;
 import ru.novo_estate.test_data.GenerationData;
 
 public class ProfileTests {
-    String phone="79085040794";
+    String phone=GenerationData.setRandomPhoneNumber();
     String accessToken = AuthSteps.getAccessToken(phone);
 
 

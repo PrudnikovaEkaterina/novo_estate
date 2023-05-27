@@ -32,7 +32,6 @@ public class NovostroykiPage {
 
 
     public void openNovostroykiPage() {
-
         open("https://novo-dom.ru/novostroyki");
     }
 
