@@ -18,8 +18,8 @@ public class TestBase {
         ProjectConfig projectConfig = ConfigCache.getOrCreate(ProjectConfig.class);
         Configuration.baseUrl = projectConfig.baseUrl();
         Configuration.browser = projectConfig.browser();
-        Configuration.browserVersion = projectConfig.browserVersion();
-        Configuration.browserSize = projectConfig.browserSize();
+//        Configuration.browserVersion = projectConfig.browserVersion();
+//        Configuration.browserSize = projectConfig.browserSize();
 //        Configuration.remote = projectConfig.remote();
         Configuration.pageLoadStrategy = "eager";
 
