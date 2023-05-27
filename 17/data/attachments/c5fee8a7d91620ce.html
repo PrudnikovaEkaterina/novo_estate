@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 0,
+    "phone": null,
+    "name": "Danny",
+    "role": 0,
+    "manager_id": null,
+    "email": "marcelle.rosenbaum@hotmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5MzQyLCJleHAiOjE2ODUxOTExNDIsIm5iZiI6MTY4NTE4OTM0MiwianRpIjoiNjJFRER5SklEU052TU9TayIsInN1YiI6IjMwNyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.MRBCYRXwKdibbfjUOyjXqvMC-ToL8gtJtrsFysqq_WeZ35Wu2BMjgbK8YK9NFvLA3MQyLD52-PrQm49uNfXloXUKI7WH4RyR0hWgwjRfMncpu5MD5nmgeZ5zHfIC93PZ025h3sbZ1N6UXMuBEWJgiI9Iabk3wgcCx6fRxFig6XWghecjtaVp5VIvthN-q3NkqYly4_V9waS_NAwh2UwJt8M8NHHakn6Bt2ZbAEKQ07hxoq8TV744swYUslyWvJ8rrIcSxI4F2PuZF3qNUiQx4tjEOERaSbTkuIUPJXs07g4_rK4vcKJS8vMNxfH-P7WYJPE92n9_Ke4__DWsW4Bqgg8xOTd5bPpS0gDg8X94-vI-iZTtCqb6HRWpdXWesDUcQhknn3LFsq60FddD2ABWNjlTSxdPwaNvqGzuOHhdr0C_CaRnMPixsufq43RF0VeIgDqzHHvTsJEW5IO1cKAKnDhaKeeA-5SJVabV7BFgLbjBldRllcDheHUfnQP29BM0n-LCATvtVGsKLDptARil-GkhewmMjdAxZ7799w9mIXSA39QdcK_P_xSh50ivJNmD8AMPRYId9K99p9TkZ8EqrHB7XqyUE1FOJNwVcsll4el9-DI-U5FFFFeUX65bu9IJ3QXT9iWL6SmUGTpBJza8NHilYjTXBQ6has_nUA570qY</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5MzQyLCJleHAiOjE2ODUxOTExNDIsIm5iZiI6MTY4NTE4OTM0MiwianRpIjoiNjJFRER5SklEU052TU9TayIsInN1YiI6IjMwNyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.MRBCYRXwKdibbfjUOyjXqvMC-ToL8gtJtrsFysqq_WeZ35Wu2BMjgbK8YK9NFvLA3MQyLD52-PrQm49uNfXloXUKI7WH4RyR0hWgwjRfMncpu5MD5nmgeZ5zHfIC93PZ025h3sbZ1N6UXMuBEWJgiI9Iabk3wgcCx6fRxFig6XWghecjtaVp5VIvthN-q3NkqYly4_V9waS_NAwh2UwJt8M8NHHakn6Bt2ZbAEKQ07hxoq8TV744swYUslyWvJ8rrIcSxI4F2PuZF3qNUiQx4tjEOERaSbTkuIUPJXs07g4_rK4vcKJS8vMNxfH-P7WYJPE92n9_Ke4__DWsW4Bqgg8xOTd5bPpS0gDg8X94-vI-iZTtCqb6HRWpdXWesDUcQhknn3LFsq60FddD2ABWNjlTSxdPwaNvqGzuOHhdr0C_CaRnMPixsufq43RF0VeIgDqzHHvTsJEW5IO1cKAKnDhaKeeA-5SJVabV7BFgLbjBldRllcDheHUfnQP29BM0n-LCATvtVGsKLDptARil-GkhewmMjdAxZ7799w9mIXSA39QdcK_P_xSh50ivJNmD8AMPRYId9K99p9TkZ8EqrHB7XqyUE1FOJNwVcsll4el9-DI-U5FFFFeUX65bu9IJ3QXT9iWL6SmUGTpBJza8NHilYjTXBQ6has_nUA570qY' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 0,
+    "phone": null,
+    "name": "Danny",
+    "role": 0,
+    "manager_id": null,
+    "email": "marcelle.rosenbaum@hotmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}'</code></pre>
+    </div>
+</body>
+</html>
