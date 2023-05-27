@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "wilford.strosin@yahoo.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg4ODAwLCJleHAiOjE2ODUxOTA2MDAsIm5iZiI6MTY4NTE4ODgwMCwianRpIjoiUkNZWkNycGhxR3VLVEpMSiIsInN1YiI6IjMwMCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.JpqiMvQbiUXIbd-w9GsJYT7poaC5FQiz1kCAm8lrhe57HIxeZD4S_K43t7WGBc8xu8pD79vH9uXSe6wZBGYQUZWFLKKkhs5AKr0yZZfoeTwnlo0bCIGBHieBF-xH2igdlBRaJEUfCbGae1zuqia3Spm9hWx8NCRyYjbMnb7KZVavYRHrdTroV1RYR1VrzDTiMnzPvjl-a8GEDiByndEO2hvP_dpK4PjMI63xb0ygJ2ziBkqyrZYdScr7FRNF2JI2bvlbPzpiQ2NbALrcmgy40TPdLY23DlcbeSwLnQTw_PP8HsBsTXrVyMCIDfgmXG4utEwS93HVw4UM5gSWjRJ9HRxrqeMdsdAH3uS1cx5kxIU7SaC0UlaeQzsQa5zkbEftHcF50ayEoe3zEQbfAz7i4a8voRKuipdyNVc2zEB6d6P42i62dwY2ZQ0IKzCYUERmTwW6Co53KBjRUXBUhvjAzq4TW1OlsKmb8JWyHaCJlsYLnVktz8c4GfIOcgkOGKemZ3l1mRM8WpsL20wCDnsdCT_Z6trzlBPNCMCHqPbOuTlgmygCiYyucf1RYY6yB02KC_yb4XgOVW-8Syt8kA6_Pd6D0RZR5OLXWxbPZAfo-k7jwf8PEAy5LasqCIyvD5dG3a45pzyqJxocORVmx0_xN-IjqcLCGEJXI7iSqwLC3nk</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg4ODAwLCJleHAiOjE2ODUxOTA2MDAsIm5iZiI6MTY4NTE4ODgwMCwianRpIjoiUkNZWkNycGhxR3VLVEpMSiIsInN1YiI6IjMwMCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.JpqiMvQbiUXIbd-w9GsJYT7poaC5FQiz1kCAm8lrhe57HIxeZD4S_K43t7WGBc8xu8pD79vH9uXSe6wZBGYQUZWFLKKkhs5AKr0yZZfoeTwnlo0bCIGBHieBF-xH2igdlBRaJEUfCbGae1zuqia3Spm9hWx8NCRyYjbMnb7KZVavYRHrdTroV1RYR1VrzDTiMnzPvjl-a8GEDiByndEO2hvP_dpK4PjMI63xb0ygJ2ziBkqyrZYdScr7FRNF2JI2bvlbPzpiQ2NbALrcmgy40TPdLY23DlcbeSwLnQTw_PP8HsBsTXrVyMCIDfgmXG4utEwS93HVw4UM5gSWjRJ9HRxrqeMdsdAH3uS1cx5kxIU7SaC0UlaeQzsQa5zkbEftHcF50ayEoe3zEQbfAz7i4a8voRKuipdyNVc2zEB6d6P42i62dwY2ZQ0IKzCYUERmTwW6Co53KBjRUXBUhvjAzq4TW1OlsKmb8JWyHaCJlsYLnVktz8c4GfIOcgkOGKemZ3l1mRM8WpsL20wCDnsdCT_Z6trzlBPNCMCHqPbOuTlgmygCiYyucf1RYY6yB02KC_yb4XgOVW-8Syt8kA6_Pd6D0RZR5OLXWxbPZAfo-k7jwf8PEAy5LasqCIyvD5dG3a45pzyqJxocORVmx0_xN-IjqcLCGEJXI7iSqwLC3nk' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "wilford.strosin@yahoo.com"
+}'</code></pre>
+    </div>
+</body>
+</html>
