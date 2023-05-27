@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "name": "Dwight"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5NzA4LCJleHAiOjE2ODUxOTE1MDgsIm5iZiI6MTY4NTE4OTcwOCwianRpIjoicnRoV1V1UVdiVEhvaUNYcCIsInN1YiI6IjMxMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.T7PQ876VpuyPVlygw0yMpFF24n3CvbAJQ05b5sPVtQgO8lU8vf05uA7DgWyppB09EFT6037jTJV_GyafBQGq0UCjHSOtZZOrmRF5hSl76MuYeyAffAtVKEf9JACYpDUhc4Diq5NHjIgJp5P_2nx5FIAdEeeJXiPlFRdv5UUpa5h4yRmTt2Ge3iWUZK1fxfi7hX2bn4fFgJ78gxR-cerbBaHjajqBzUTFALCea1IAw9q34-PQg3FV9gt4eXfrF2ny3ujy-Rj0piAD-VvSAgtcs9egvkWmXMg0lkr_PJ9d4tWXaIEwWrvZwVMHcKaigeVgCLR6yHFh88MRZIfq0TCsV4PAfcAdI8KbNl6dTmTqxNGpkC-yMob66obW08ZGQeByM0jzTFtb9IcDEebBxB38CZaKTRT8wjhNPGoWUoQ924buCLh4Yhi6NowJ08l6KRtKE0XCMaFBFnttnUwPIz1WWSmRI_4Kf4n0OZYhyg8FAtOpiFH3ii5ySLUtmyrqDZ9VZlIoqdiKa4wSqznbleSENyox7sTOf6nGkynPyk1x8ATlnCVgx7WWZpZTu0gji3h3Dedex2dWXnsF4w3e2QNki7l6KX-kfC8nVUfC6HvrX4DaxRV0SlvZa8fBXNEkhfczd5xihtY6nAxeyRwiK866MSrLxbVYXw4wHiBUYqStdlk</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5NzA4LCJleHAiOjE2ODUxOTE1MDgsIm5iZiI6MTY4NTE4OTcwOCwianRpIjoicnRoV1V1UVdiVEhvaUNYcCIsInN1YiI6IjMxMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.T7PQ876VpuyPVlygw0yMpFF24n3CvbAJQ05b5sPVtQgO8lU8vf05uA7DgWyppB09EFT6037jTJV_GyafBQGq0UCjHSOtZZOrmRF5hSl76MuYeyAffAtVKEf9JACYpDUhc4Diq5NHjIgJp5P_2nx5FIAdEeeJXiPlFRdv5UUpa5h4yRmTt2Ge3iWUZK1fxfi7hX2bn4fFgJ78gxR-cerbBaHjajqBzUTFALCea1IAw9q34-PQg3FV9gt4eXfrF2ny3ujy-Rj0piAD-VvSAgtcs9egvkWmXMg0lkr_PJ9d4tWXaIEwWrvZwVMHcKaigeVgCLR6yHFh88MRZIfq0TCsV4PAfcAdI8KbNl6dTmTqxNGpkC-yMob66obW08ZGQeByM0jzTFtb9IcDEebBxB38CZaKTRT8wjhNPGoWUoQ924buCLh4Yhi6NowJ08l6KRtKE0XCMaFBFnttnUwPIz1WWSmRI_4Kf4n0OZYhyg8FAtOpiFH3ii5ySLUtmyrqDZ9VZlIoqdiKa4wSqznbleSENyox7sTOf6nGkynPyk1x8ATlnCVgx7WWZpZTu0gji3h3Dedex2dWXnsF4w3e2QNki7l6KX-kfC8nVUfC6HvrX4DaxRV0SlvZa8fBXNEkhfczd5xihtY6nAxeyRwiK866MSrLxbVYXw4wHiBUYqStdlk' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "name": "Dwight"
+}'</code></pre>
+    </div>
+</body>
+</html>
