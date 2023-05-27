@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "name": "Branden"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5MjI1LCJleHAiOjE2ODUxOTEwMjUsIm5iZiI6MTY4NTE4OTIyNSwianRpIjoiWTJwYjJCbWVBR0s0T0lKZyIsInN1YiI6IjMwNSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.lIAiaKmyWyXUl8rZa0FqE6BDv29TWYQK8Tc-IRfJfLuMTruUH91pGMoeiD85iheUwzLYPmszpN-O-G71xkQHhxf-2MjhVZq5FE0OGkF3-TTYyKUCXq_WHBAtwF_0bEsY9OqnEPZLgzlnWuUk03Ro-qQrfGAcHi6ohgS05rwhIb3Wot7LJjf4JVwadISOfQBJ1e28ZZh7awA3m8F5P0BBUIXdKgId99nirYNTSE7RGMu-3tOrSY4yTru3r-WXLadTpxkldgKemh2ljf2lTBJ9_ldgB6MtHoq6-P_N5VOHbrPyih4pRL5_rw_EbuD5BTfPfW21_olH52jMMhF_OuC9iyzZ46PmocqofOefAfWY_-suy7nbiUyuY5QvW7Twhrawoa92AWXzMXMsXiFXvAuC5NzZlqtStIbq-ZvYZSqNKmRQSdQ01osyBbyyRSkR6feT3grkkptta9NG4BGQLgyrQRvyu1irnYfQvhgUc2aeKGHnS9L9oIvmCgx60PCXIuiDBcREOA4tXe3VawznFjniNHUuYT2DjJThcjnvoDE3ojs1aeMwu55YXQ14xzNjx39a5fVx9Fba0wm2scTp8wlXXosNTByqlW1HkMuiJnYgw0AV5YejB-qSGU0y-lUBPY6AJjzF3kukQZvrI5hjC9wfRtYxpRvUIDGTrOgaqYIDE5M</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5MjI1LCJleHAiOjE2ODUxOTEwMjUsIm5iZiI6MTY4NTE4OTIyNSwianRpIjoiWTJwYjJCbWVBR0s0T0lKZyIsInN1YiI6IjMwNSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.lIAiaKmyWyXUl8rZa0FqE6BDv29TWYQK8Tc-IRfJfLuMTruUH91pGMoeiD85iheUwzLYPmszpN-O-G71xkQHhxf-2MjhVZq5FE0OGkF3-TTYyKUCXq_WHBAtwF_0bEsY9OqnEPZLgzlnWuUk03Ro-qQrfGAcHi6ohgS05rwhIb3Wot7LJjf4JVwadISOfQBJ1e28ZZh7awA3m8F5P0BBUIXdKgId99nirYNTSE7RGMu-3tOrSY4yTru3r-WXLadTpxkldgKemh2ljf2lTBJ9_ldgB6MtHoq6-P_N5VOHbrPyih4pRL5_rw_EbuD5BTfPfW21_olH52jMMhF_OuC9iyzZ46PmocqofOefAfWY_-suy7nbiUyuY5QvW7Twhrawoa92AWXzMXMsXiFXvAuC5NzZlqtStIbq-ZvYZSqNKmRQSdQ01osyBbyyRSkR6feT3grkkptta9NG4BGQLgyrQRvyu1irnYfQvhgUc2aeKGHnS9L9oIvmCgx60PCXIuiDBcREOA4tXe3VawznFjniNHUuYT2DjJThcjnvoDE3ojs1aeMwu55YXQ14xzNjx39a5fVx9Fba0wm2scTp8wlXXosNTByqlW1HkMuiJnYgw0AV5YejB-qSGU0y-lUBPY6AJjzF3kukQZvrI5hjC9wfRtYxpRvUIDGTrOgaqYIDE5M' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "name": "Branden"
+}'</code></pre>
+    </div>
+</body>
+</html>

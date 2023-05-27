@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 0,
+    "phone": null,
+    "name": "Garland",
+    "role": 0,
+    "manager_id": null,
+    "email": "veronique.maggio@gmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5MjIyLCJleHAiOjE2ODUxOTEwMjIsIm5iZiI6MTY4NTE4OTIyMiwianRpIjoibmZLRTUydDBmUnZLU0dydiIsInN1YiI6IjMwNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.k3YPBZu1zVoiHTszwj5g-ZzJLA5DijBFPH2aTiQIJVcjJqy-QzvHwbM49QMa6fEduZeF-SDoM61ob6PkDm3JJFArl0gYXdvkB0YakBSqNA3aqLgwL824g5dWCuaj8MofjrC4etb9F73z1WklEHgGYU9IK9K3Sy8gY9dR3iADf8UKJd9oUqItmlscc3QGxnR1EPPI0Sz-0085ztktvp2TJO9pBlZQRXCJ0CPnIlQ6uxbbp4e80D2BH4lxA3xKqO13zILTEsCXVQUEveWx2oO2PG3CPqTEzDYP-U8VK4g9k9Pz1Ulm-2WTnfmeolZ2hpAW5k5pg_ixHo2ufsaln9cbt6czx-hCNjYHVCaFSHZS0s4BbQd2o6lfrFEmculpFHZsUF2h9wkcTlazkoaAfpVnpEaTfwhjCBXnd-da5sQal11nI4GAnnFvj8_eUvA6WNPDkC0NMkXLD_bC0xkQGaAvukhVn10KQzv59MMC8-5vf0eKted7SYrND-cDjK5INw21hCs9hrdtEEalzkHeo13wSYH4jYnKhyG3GONHcWmztQwHQ04J-VvnoPL3ZTU3FiXCNAW3cr2__5s3JSeFbQheujCzjGFo69556RYDOBA21zh85mzQcm9ilLSGebRpUMaJCMaldhphAa4okeM0XySSYWz7UsHdaQGJ63GD8I7Ufas</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5MjIyLCJleHAiOjE2ODUxOTEwMjIsIm5iZiI6MTY4NTE4OTIyMiwianRpIjoibmZLRTUydDBmUnZLU0dydiIsInN1YiI6IjMwNCIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.k3YPBZu1zVoiHTszwj5g-ZzJLA5DijBFPH2aTiQIJVcjJqy-QzvHwbM49QMa6fEduZeF-SDoM61ob6PkDm3JJFArl0gYXdvkB0YakBSqNA3aqLgwL824g5dWCuaj8MofjrC4etb9F73z1WklEHgGYU9IK9K3Sy8gY9dR3iADf8UKJd9oUqItmlscc3QGxnR1EPPI0Sz-0085ztktvp2TJO9pBlZQRXCJ0CPnIlQ6uxbbp4e80D2BH4lxA3xKqO13zILTEsCXVQUEveWx2oO2PG3CPqTEzDYP-U8VK4g9k9Pz1Ulm-2WTnfmeolZ2hpAW5k5pg_ixHo2ufsaln9cbt6czx-hCNjYHVCaFSHZS0s4BbQd2o6lfrFEmculpFHZsUF2h9wkcTlazkoaAfpVnpEaTfwhjCBXnd-da5sQal11nI4GAnnFvj8_eUvA6WNPDkC0NMkXLD_bC0xkQGaAvukhVn10KQzv59MMC8-5vf0eKted7SYrND-cDjK5INw21hCs9hrdtEEalzkHeo13wSYH4jYnKhyG3GONHcWmztQwHQ04J-VvnoPL3ZTU3FiXCNAW3cr2__5s3JSeFbQheujCzjGFo69556RYDOBA21zh85mzQcm9ilLSGebRpUMaJCMaldhphAa4okeM0XySSYWz7UsHdaQGJ63GD8I7Ufas' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 0,
+    "phone": null,
+    "name": "Garland",
+    "role": 0,
+    "manager_id": null,
+    "email": "veronique.maggio@gmail.com",
+    "manager": null,
+    "phone_verified_at": null,
+    "avatar_path": null,
+    "referral_code": null,
+    "gar_object_id": 0,
+    "created_at": null,
+    "updated_at": null,
+    "favorites_flats_count": 0,
+    "favorites_buildings_count": 0,
+    "recommendations_flats_count": 0,
+    "recommendations_buildings_count": 0,
+    "avatar_url": null
+}'</code></pre>
+    </div>
+</body>
+</html>
