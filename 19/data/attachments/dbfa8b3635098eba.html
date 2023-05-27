@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: https://novo-dom.ru/api/me/profile/</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "email": "mose.steuber@hotmail.com"
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5Nzk1LCJleHAiOjE2ODUxOTE1OTUsIm5iZiI6MTY4NTE4OTc5NSwianRpIjoiaG5oZ3I0ajlVZUd5Rk55ZiIsInN1YiI6IjMxMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.mtKOzb-NtzliD28c1oonG0FwYsZGCODN07D_NbIBS-yTSFz2YvxpibhdA6h0FGR5Bw7wAy96FPYU6_aAlG8b8TJdIC194c0fK4vxHa9i0LaQWsJwPeEyqtVXQGP_tOL667niV6P3Gzs1LZUt8hn9QhIXIVcRJ3BvYdFdFPGUQNmGpXvoReKjKmtl55rSeytYLX1nYbUrvAvzE7mcXI_O8ir4Fpj9gdV3DQncqhfmLSMDUbWSzozCjPEvSj0_1dwpzmwDpvKHNaomteMqHJVHbM26DJN5nuYgP8zVD7X3JZjmAKpc_jIa-FfqxWFlXHv5hAKd0moiF0hGr792_pGUsucDRPCS1B9eFnSaU0PNzirQmp_cAXdQjXI26bUrCAhlKvxTYwjtCyYxxj9TiRy-kh5COgRKeblEi9lJt-ppiRDKP8ZzavNSUu7qFpVGYACdJpqQpTi_Cpl7KW5od9n7Bos__XCK4zlcQhcdG6NHoQ-0WsNn0cMDbXsv77hbOVUVzcbzTwEHb9zXTbvhu0wr3IaHe8L5ky3KH7nGaNsi6tyxCyidhJu-a5KN2VyHy7jj0MlqOjGP7ccTW-r0t3RD0V8Nia1STMJhaHNf58P2Yk1C6ASFz9uPoSImZE4XP43nIjALKnyMmKGgRuO8CXaS5LOm9fcsFQTJVOa4iA9fPrU</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'https://novo-dom.ru/api/me/profile/' -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpc3MiOiJodHRwczovL25vdm8tZG9tLnJ1L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNjg1MTg5Nzk1LCJleHAiOjE2ODUxOTE1OTUsIm5iZiI6MTY4NTE4OTc5NSwianRpIjoiaG5oZ3I0ajlVZUd5Rk55ZiIsInN1YiI6IjMxMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoxLCJ4dHlwZSI6ImF1dGgifQ.mtKOzb-NtzliD28c1oonG0FwYsZGCODN07D_NbIBS-yTSFz2YvxpibhdA6h0FGR5Bw7wAy96FPYU6_aAlG8b8TJdIC194c0fK4vxHa9i0LaQWsJwPeEyqtVXQGP_tOL667niV6P3Gzs1LZUt8hn9QhIXIVcRJ3BvYdFdFPGUQNmGpXvoReKjKmtl55rSeytYLX1nYbUrvAvzE7mcXI_O8ir4Fpj9gdV3DQncqhfmLSMDUbWSzozCjPEvSj0_1dwpzmwDpvKHNaomteMqHJVHbM26DJN5nuYgP8zVD7X3JZjmAKpc_jIa-FfqxWFlXHv5hAKd0moiF0hGr792_pGUsucDRPCS1B9eFnSaU0PNzirQmp_cAXdQjXI26bUrCAhlKvxTYwjtCyYxxj9TiRy-kh5COgRKeblEi9lJt-ppiRDKP8ZzavNSUu7qFpVGYACdJpqQpTi_Cpl7KW5od9n7Bos__XCK4zlcQhcdG6NHoQ-0WsNn0cMDbXsv77hbOVUVzcbzTwEHb9zXTbvhu0wr3IaHe8L5ky3KH7nGaNsi6tyxCyidhJu-a5KN2VyHy7jj0MlqOjGP7ccTW-r0t3RD0V8Nia1STMJhaHNf58P2Yk1C6ASFz9uPoSImZE4XP43nIjALKnyMmKGgRuO8CXaS5LOm9fcsFQTJVOa4iA9fPrU' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "email": "mose.steuber@hotmail.com"
+}'</code></pre>
+    </div>
+</body>
+</html>
