@@ -23,6 +23,20 @@ allure {
 
 repositories {
     mavenCentral()
+    compileJava {
+        options.encoding = 'UTF-8'
+    }
+    compileTestJava {
+        options.encoding = 'UTF-8'
+    }
+}
+
+compileJava{
+    options.encoding='UTF-8'
+}
+
+compileTestJava{
+    options.encoding='UTF-8'
 }
 
 dependencies {
@@ -42,7 +56,33 @@ dependencies {
     )
 }
 
+tasks.withType(Test) {//благодаря этой строчке передаются параметры в скрипт сборки
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
 test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
+
+task novoApi(type: Test) {
+    useJUnitPlatform {
+        includeTags "Api"
+    }
+}
+
+
+task novoWeb(type: Test) {
+    useJUnitPlatform {
+        includeTags "Web"
+    }
+}
+
